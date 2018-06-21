@@ -74,72 +74,42 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-<<<<<<< HEAD
-
-            // Your code here...
-            
-           var firstNumber = 0;
-           var secondNumber = 0;
-           var operator = "";
-           var result = 0;
-           var isOperatorChosen = false;
-           var isCalculated = false;
-=======
-            // Make variables global to the runtime of our app 
-            var firstNumber = "";
-            var secondNumber = "";
-            var operator = "";
-            var result = 0;
-            var isOperatorChosen = false;
-            var isCalculated = false;
-            //  Use a function to init our calc, to guarantee reset
-            function initializeCalculator() {
-                firstNumber = "";
-                secondNumber = "";
-                operator = "";
-                isOperatorChosen = false;
-                isCalculated = false;
-
-                $("#first-number, #second-number, #operator, #result").empty();
-
-            }
-
-            // get the numbers to show
-            $(".card").on("click", ".number", function() {
-
-                    if (isCalculated) {
-                        return false;
-                    }
-                }
-
+-            // declare variables 
+-            var numB = $(".btn btn-primary number")
+-                // get the numbers to show
+-            $(".btn").on("click", function() {
+-                console.log($(this).attr("value"));
+-                return (1);
++            // Make variables global to the runtime of our app 
++            var firstNumber = "";
++            var secondNumber = "";
++            var operator = "";
++            var result = 0;
++            var isOperatorChosen = false;
++            var isCalculated = false;
++            //  Use a function to init our calc, to guarantee reset
++            function initializeCalculator() {
++                firstNumber = "";
++                secondNumber = "";
++                operator = "";
++                isOperatorChosen = false;
++                isCalculated = false;
++
++                $("#first-number, #second-number, #operator, #result").empty();
++
++            }
++
++            // get the numbers to show
++            $(".card").on("click", ".number", function() {
++
++                    if (isCalculated) {
++                        return false;
++                    }
++                }
++
                 // allow operators to work
 
                 // let numbers be used by operators
-
-                //
-            });
->>>>>>> f9a0f1e8b7f178896b3a982bd24de3d8b4f8150b
-
-            $()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
